@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        .d{
+            float: left;
+        }
+        .rr
+        {
+          float: right;
+          
+        }
+        .s
+{
+    font-family: Helvetica, sans-serif;
+}
+.f{
+   float:right;
+   background-color: black;
+   color: whitesmoke;
+   width: 100px;
+   height: 20px;
+  }
+  p{
+    text-indent: 5em;
+  }
+  .tab
+  {
+    tab-size: 3;
+  }
+  .t
+  {
+    text-indent: 5em;
+  }
+  .bt{
+    background-color: white;
+    color:black;
+    width: 200px;
+    height:40px;
+    font-family: Helvetica, sans-serif;
+  }
+  .bt:hover{
+    background-color: black;
+    color:white;
+  }
+
+  .field
+  {
+    width:800px;
+    height: 300px;
+  }
+  .field2
+  {
+    width:800px;
+    height: 300px;
+  }
+  
+
+    </style>
+  </head>
+  <body>
+    <form> 
+  <fieldset style="background-color:black;">
+    <h1 class="s" style="color: whitesmoke;">JIOMYNT</h1>
+    <h2 class="s" style="color: whitesmoke;">BIGGEST SHOPPING SALE </h2>
+    <form action="Contact.html">
+   <a href="reg.html" class="f">REGISTER</a>
+   <a href="index.html" class="f">LOGIN</a>
+   <a href ="#" class="f">MEN </a>
+   <a href ="#" class="f">WOMEN </a>
+   <a href="Contact.html" class="f">Contact Us</a>
+   <a href="About.html" class="f">ABOUT</a>
+   
+    </form>
+    </fieldset>
+</form>
+<center>
+    
+    <div class="slider">
+      <div class="slides">
+        
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        
+        
+        <div class="slide first">
+          <img src="home-img.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="cat-2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="slider-2.png"  alt="">
+        </div>
+        <div class="slide">
+          <img src="counter-img.png" alt="">
+        </div>
+
+        <div class="navigation-auto" >
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      
+      </div>
+      
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    
+    </div>
+
+  </center>
+  <marquee ><h1 style="color:blue">NEW ARRIVALS</h1></marquee>
+  <fieldset>
+    <marquee style="background-color: black ;color:white;"><h1>WOMENS TRENDING</h1></marquee>
+      
+    <table>
+      <th><img src="p-4.png" class="d">
+<br>
+<br>
+<a href="#"> PINK DRESS RS3000</a>
+<br><button class="bt" >BUY NOW</button>
+      </th>
+      <th><img src="f-2-1.png" class="d">
+        <br>
+        <br>
+        <a href="#"> PINK DRESS RS3000</a>
+        <br><button class="bt" >BUY NOW</button>
+              </th>
+              <th><img src="p-2.png" class="d">
+                <br>
+                <br>
+                <a href="#"> PINK DRESS RS3000</a>
+                <br><button class="bt" >BUY NOW</button>
+                      </th>
+                      
+              <th><img src="p-6.png" class="d">
+                <br>
+                <br>
+                <a href="#"> PINK DRESS RS3000</a>
+                <br><button class="bt" >BUY NOW</button>
+                      </th>
+
+  </table>    
+
+    </fieldset>
+    <marquee style="background-color: black ;color:white;"><h1>MENS TRENDING</h1></marquee>
+      <fieldset>
+        <table>
+          <th><img src="p-5.png" class="d">
+    <br>
+    <br>
+    <a href="#"> PINK DRESS RS3000</a>
+    <br><button class="bt" >BUY NOW</button>
+          </th>
+          <th><img src="p-3.png" class="d">
+            <br>
+            <br>
+            <a href="#"> PINK DRESS RS3000</a>
+            <br><button class="bt" >BUY NOW</button>
+                  </th>
+                  <th><img src="p-7.png" class="d">
+                    <br>
+                    <br>
+                    <a href="#"> PINK DRESS RS3000</a>
+                    <br><button class="bt" >BUY NOW</button>
+                          </th>
+                          
+                  <th><img src="p-9.png" class="d">
+
+                    <br>
+                    <br>
+                    <a href="#"> PINK DRESS RS3000</a>
+                    <br><button class="bt" >BUY NOW</button>
+                          </th>
+
+    </fieldset>
+
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 2000);
+      </script>
+  
+  </body>
+</html>
+

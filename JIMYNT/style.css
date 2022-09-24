@@ -1,0 +1,273 @@
+
+Conversation opened. 1 read message.
+
+Skip to content
+Using Guru Nanak Institutions Mail with screen readers
+in:sent 
+3 of 11
+index
+
+20WJ5AO520 RAJESH <20wj5a0520@gniindia.org>
+Attachments
+Jun 20, 2022, 7:30 PM (4 days ago)
+to LavishArora133
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        .d{
+            float: left;
+        }
+        .rr
+        {
+          float: right;
+          
+        }
+        .s
+{
+    font-family: Helvetica, sans-serif;
+}
+.f{
+   float:right;
+   background-color: black;
+   color: whitesmoke;
+   width: 100px;
+   height: 20px;
+  }
+  p{
+    text-indent: 5em;
+  }
+  .tab
+  {
+    tab-size: 3;
+  }
+  .t
+  {
+    text-indent: 5em;
+  }
+  .bt{
+    background-color: white;
+    color:black;
+    width: 200px;
+    height:40px;
+    font-family: Helvetica, sans-serif;
+  }
+  .bt:hover{
+    background-color: black;
+    color:white;
+  }
+
+  .field
+  {
+    width:800px;
+    height: 300px;
+  }
+  .field2
+  {
+    width:800px;
+    height: 300px;
+  }
+    </style>
+  </head>
+  <body>
+    <form> 
+  <fieldset style="background-color:black;">
+    <h1 class="s" style="color: whitesmoke;">R-BAZZAR</h1>
+    <h2 class="s" style="color: whitesmoke;">YOUR SERACH ENDS HERE</h2>
+    
+    <button class="f">REGISTER</button>
+    <button class="f">LOGIN</button>
+    <button class="f">ABOUT US</button>
+    <button class="f">CONTACT</button> 
+    </fieldset>
+</form>
+<center>
+    
+    <div class="slider">
+      <div class="slides">
+        
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        
+        
+        <div class="slide first">
+          <img src="1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="4.jpg" alt="">
+        </div>
+
+        <div class="navigation-auto" >
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      
+      </div>
+      
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    
+    </div>
+
+  </center>
+  <marquee ><h2 style="color:blue">NEW ARRIVALS</h2></marquee>
+ <fieldset>
+  <fieldset class="field">
+  <img src="P1.jpg" width="300px"> <iframe class="rr " width="400px" height="250" src="https://youtube.com/embed//gFTXP4BAvGY"></iframe><fie;
+   <br>
+  <br><a href="" class="tab">LENOVO NOTE BOOK Ryzen 5 AMD<br>OCTA CORE Processor
+      Nvidea GEFORCE GTX</a><br>
+      <p><button class="bt tab" >BUY NOW<br> Rs55000</button></p>  <strong style="float: right;">WATCH And Buy Now</strong></strong>  
+    </fieldset> 
+<fieldset class="field2">
+      <img src="HP.jpg" width="300px"><iframe class="rr " width="400px" height="250" src="https://youtube.com/embed//QaWGKtYIN_s"></iframe><fie;
+      <br>
+         <a href="" class="tab">HP Ryzen 5 AMDA
+         <br>OCTA CORE Processor
+          Nvidea GEFORCE GTX</a><br>
+          <p><button class="bt tab" >BUY NOW<br> Rs55000</button>
+          </p>
+        </fieldset>
+          
+
+    </fieldset>
+
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 2000);
+      </script>
+  
+  </body>
+</html>
+Attachments area
+
+  .slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 600px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+  /css for manual slide navigation/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /css for automatic navigation/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
